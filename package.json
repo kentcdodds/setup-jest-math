@@ -12,5 +12,19 @@
   "scripts": {
     "test": "jest --coverage",
     "test:watch": "jest --watch"
+  },
+  "jest": {
+    "testEnvironment": "jest-environment-node",
+    "collectCoverageFrom": [
+      "*.js"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "statements": 25,
+        "branches": 100,
+        "functions": 50,
+        "lines": 25
+      }
+    }
   }
 }
